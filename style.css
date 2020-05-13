@@ -16,7 +16,10 @@ html, body {
         "a l l r r b"
         "a c c c c b"
         "a k1 k2 k3 k4 b"
-        "a btn btn btn btn b";
+        "a btn btn btn btn b"
+        "a tt tt tt tt b"
+        "a tb tb tb tb b"
+        "a gm gm gm gm b";
 }
 .header {
     display: flex;
@@ -204,6 +207,40 @@ input {
 .btn-get-more {
     grid-area: btn;
 }
+.btn-all-pallets {
+    grid-area: gm;
+}
+.table-title {
+    grid-area: tt;
+}
+.color-table {
+    grid-area: tb;
+    width: 100%;
+    height: 400px;
+    margin-left: -5px;
+    border-spacing: 5px;
+}
+td.color1 {
+    background-color: #f56b64;
+}
+td.color2 {
+    background-color: #f4899a;
+}
+td.color3 {
+    background-color: #dc5281;
+}
+td.color4 {
+    background-color: #963f6d;
+}
+td.color5 {
+    background-color: #f29d37;
+}
+td.color6 {
+    background-color: #d27746;
+}
+td.color7 {
+    background-color: #f59f6a;
+}
 @media (max-width: 700px) {
     .layout {
         grid-template-columns: 20px 1fr 20px;
@@ -217,7 +254,10 @@ input {
             "a2 k2 b2"
             "a2 k3 b2"
             "a2 k4 b2"
-            "a2 btn b2";
+            "a2 btn b2"
+            "a2 tt b2"
+            "tb tb tb"
+            "a3 gm b3";
     }
     .pallets-2019 {
         padding-left: 0;
@@ -249,6 +289,9 @@ input {
     .color_circle {
         margin: 0;
     }
+    .color-table {
+        height: 300px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -278,6 +321,9 @@ input {
     input {
         font-size: 20px;
     }
+    .color-table {
+        height: 200px;
+    }
     .layout {
         grid-template-columns: 20px 1fr 20px;
         grid-template-areas: 
@@ -290,10 +336,9 @@ input {
             "a2 k2 b2"
             "a2 k3 b2"
             "a2 k4 b2"
-            "a2 btn b2";
+            "a2 btn b2"
+            "a2 tt b2"
+            "tb tb tb"
+            "a3 gm b3";
     }
 }
-
-/* .main-article__pallets-2019 {
-    grid-area: r;
-} */
