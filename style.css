@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
 }
 .layout {
     display: grid;
@@ -62,10 +63,8 @@ html, body {
     font-size: 50px;
     text-align: center;
 }
-
 .main-article {
     grid-area: l;
-    font-size: 18px;
 }
 .heading {
     margin: 0;
@@ -74,7 +73,109 @@ html, body {
 .main-article__color-name {
     color: #ff5e65;
 }
+.pallets-2019 {
+    grid-area: r;
+    padding-left: 30px;
+}
+.heading_gray {
+    color: #b3b7b4;
+}
+.color-sets {
+    border: 5px solid #ff5e65;
+    max-width: 350px;
+    padding: 15px 30px;
+}
+.color-set strong {
+    color:  #ff5e65;
+    text-decoration: underline;
+}
+.color-set__main-box {
+    display: flex;
+    
+}
+.color-set__box {
+    margin: 10px 0;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+.n11 { background-color: #b3b7b4;}
+.n12 { background-color: #244946;}
+.n13 { background-color: #6d684f;}
+.n14 { background-color: #949740;}
+.n15 { background-color: #9f5967;}
+.n16 { background-color: #f56b64;}
+.n17 { background-color: #a29981;}
+.n18 { background-color: #494744;}
+.n21 { background-color: #f4899a;}
+.n22 { background-color: #dc5281;}
+.n23 { background-color: #e07aa4;}
+.n24 { background-color: #963f6d;}
+.n25 { background-color: #f56b64;}
+.n26 { background-color: #f29d37;}
+.n27 { background-color: #d27746;}
+.n28 { background-color: #f59f6a;}
+.n31 { background-color: #f56b64;}
+.n32 { background-color: #773934;}
+.n33 { background-color: #bb847b;}
+.n34 { background-color: #e5a887;}
+.n35 { background-color: #e06076;}
+.n36 { background-color: #f09f9c;}
+.n37 { background-color: #c5a480;}
+.n38 { background-color: #d2b798;}
+.n41 { background-color: #ceda36;}
+.n42 { background-color: #f56b64;}
+.n43 { background-color: #7b5695;}
+.n44 { background-color: #9a2357;}
+.n45 { background-color: #317f9d;}
+.n46 { background-color: #226269;}
+.n47 { background-color: #3575b3;}
+.n48 { background-color: #e56689;}
+.n51 { background-color: #2d2e55;}
+.n52 { background-color: #304b8c;}
+.n53 { background-color: #329196;}
+.n54 { background-color: #7d8851;}
+.n55 { background-color: #f56b64;}
+.n56 { background-color: #d793a9;}
+.n57 { background-color: #f7dd41;}
+.n58 { background-color: #9ddbdc;}
+
+@media (max-width: 700px) {
+    .layout {
+        grid-template-columns: 20px 1fr 1fr 20px;
+        grid-template-areas: 
+            "h h h h"
+            "a t t b"
+            "a l l b"
+            "r r r r"
+            "a2 c c b2"
+            "a2 k1 k2 b2"
+            "a2 k3 k4 b2";
+    }
+    .pallets-2019 {
+        padding-left: 0;
+    }
+    .color-set strong,
+    .heading_gray {
+        margin-left: 20px;
+    }
+    .color-sets {
+        max-width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .color-set__box {
+        width: 12.5%;
+        height: 60px;
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+
 @media (max-width: 570px) {
+    body {
+        font-size: 16px;
+    }
     .header__image {
         display: none;
     }
@@ -94,12 +195,12 @@ html, body {
             "h h h"
             "a t b"
             "a l b"
-            "a r b"
-            "a c  b"
-            "a k1 b"
-            "a k2 b"
-            "a k3 b"
-            "a k4 b";
+            "r r r"
+            "a2 c  b2"
+            "a2 k1 b2"
+            "a2 k2 b2"
+            "a2 k3 b2"
+            "a2 k4 b2";
     }
 }
 
