@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.layout {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas: 
+        "h h h h h h"
+        "a t t t t b"
+        "a l l r r b"
+        "a c c c c b"
+        "a k1 k2 k3 k4 b";
+}
+@media (max-width: 500px) {
+    .layout {
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-areas: 
+            "h h h"
+            "a t b"
+            "a l b"
+            "a r b"
+            "a c  b"
+            "a k1 b"
+            "a k2 b"
+            "a k3 b"
+            "a k4 b";
+    }
+}
+
+
+.header {
+    grid-area: h;
+    height: 100px;
+    background-color: pink;
+}
+h1 {
+    grid-area: t;
+    height: 50px;
+    background-color: yellow;
+}
+.left {
+    grid-area: l;
+    height: 200px;
+    background-color: #666;
+}
+.right {
+    grid-area: r;
+    height: 200px;
+    background-color: #777;
+}
+h2 {
+    grid-area: c;
+    height: 50px;
+    background-color: #BBB;
+}
+.b1 {
+    grid-area: k1;
+    height: 100px;
+    background-color: #1A1;
+}
+.b2 {
+    grid-area: k2;
+    height: 100px;
+    background-color: #A11;
+}
+.b3 {
+    grid-area: k3;
+    height: 100px;
+    background-color: #A1A;
+}
+.b4 {
+    grid-area: k4;
+    height: 100px;
+    background-color: #11A;
+}
