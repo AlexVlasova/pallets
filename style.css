@@ -15,7 +15,8 @@ html, body {
         "a t t t t b"
         "a l l r r b"
         "a c c c c b"
-        "a k1 k2 k3 k4 b";
+        "a k1 k2 k3 k4 b"
+        "a btn btn btn btn b";
 }
 .header {
     display: flex;
@@ -91,7 +92,6 @@ html, body {
 }
 .color-set__main-box {
     display: flex;
-    
 }
 .color-set__box {
     margin: 10px 0;
@@ -140,17 +140,84 @@ html, body {
 .n57 { background-color: #f7dd41;}
 .n58 { background-color: #9ddbdc;}
 
+.title {
+    grid-area: c;
+}
+.subtitle {
+    color: #9c9c9c;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.c-desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 10px;
+}
+.c-desc:last-child {
+    margin-right: 0;
+}
+.c-desc_first {
+    grid-area: k1;
+}
+.c-desc_second {
+    grid-area: k2;
+}
+.c-desc_third {
+    grid-area: k3;
+}
+.c-desc_fourth {
+    grid-area: k4;
+}
+.color_circle {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+}
+.brown {
+    background-color: #5c1922;
+}
+.white {
+    background-color: #f6e4d8;
+}
+.blue {
+    background-color: #1c203b;
+}
+.yellow {
+    background-color: #f3a479;
+}
+
+input {
+    display: block;
+    max-width: 300px;
+    width: 70%;
+    margin: 20px auto;
+    background-color: #ff5e65;
+    border: none;
+    border-bottom: 5px solid #e0454d;
+    color: white;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.btn-get-more {
+    grid-area: btn;
+}
 @media (max-width: 700px) {
     .layout {
-        grid-template-columns: 20px 1fr 1fr 20px;
+        grid-template-columns: 20px 1fr 20px;
         grid-template-areas: 
-            "h h h h"
-            "a t t b"
-            "a l l b"
-            "r r r r"
-            "a2 c c b2"
-            "a2 k1 k2 b2"
-            "a2 k3 k4 b2";
+            "h h h"
+            "a t b"
+            "a l b"
+            "r r r"
+            "a2 c b2"
+            "a2 k1 b2"
+            "a2 k2 b2"
+            "a2 k3 b2"
+            "a2 k4 b2"
+            "a2 btn b2";
     }
     .pallets-2019 {
         padding-left: 0;
@@ -170,6 +237,18 @@ html, body {
         margin: 10px 0;
         padding: 0;
     }
+    .c-desc {
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .c-desc__title {
+        width: 70%;
+    }
+    .color_circle {
+        margin: 0;
+    }
 }
 
 @media (max-width: 570px) {
@@ -186,8 +265,18 @@ html, body {
     .heading {
         font-size: 28px;
     }
+    .subtitle {
+        font-size: 20px;
+    }
     .main-article__hidden_mobile {
         display: none;
+    }
+    .color_circle {
+        width: 70px;
+        height: 70px;
+    }
+    input {
+        font-size: 20px;
     }
     .layout {
         grid-template-columns: 20px 1fr 20px;
@@ -200,7 +289,8 @@ html, body {
             "a2 k1 b2"
             "a2 k2 b2"
             "a2 k3 b2"
-            "a2 k4 b2";
+            "a2 k4 b2"
+            "a2 btn b2";
     }
 }
 
