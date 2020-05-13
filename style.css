@@ -1,4 +1,5 @@
 html, body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", sans-serif;
@@ -22,7 +23,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     min-height: 280px;
-    margin-bottom: 30px;
     background-color: #ff5e65;
     color: white;
     font-weight: bold;
@@ -57,8 +57,35 @@ html, body {
     min-height: 280px;
     display: block;
 }
+.main-title {
+    grid-area: t;
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-article {
+    grid-area: l;
+    font-size: 18px;
+}
+.heading {
+    margin: 0;
+    font-size: 35px;
+}
+.main-article__color-name {
+    color: #ff5e65;
+}
 @media (max-width: 570px) {
     .header__image {
+        display: none;
+    }
+    .main-title {
+        font-size: 36px;
+        text-align: left;
+    }
+    .heading {
+        font-size: 28px;
+    }
+    .main-article__hidden_mobile {
         display: none;
     }
     .layout {
@@ -76,43 +103,6 @@ html, body {
     }
 }
 
-h1 {
-    grid-area: t;
-    height: 50px;
-    background-color: yellow;
-}
-.left {
-    grid-area: l;
-    height: 200px;
-    background-color: #666;
-}
-.right {
+/* .main-article__pallets-2019 {
     grid-area: r;
-    height: 200px;
-    background-color: #777;
-}
-h2 {
-    grid-area: c;
-    height: 50px;
-    background-color: #BBB;
-}
-.b1 {
-    grid-area: k1;
-    height: 100px;
-    background-color: #1A1;
-}
-.b2 {
-    grid-area: k2;
-    height: 100px;
-    background-color: #A11;
-}
-.b3 {
-    grid-area: k3;
-    height: 100px;
-    background-color: #A1A;
-}
-.b4 {
-    grid-area: k4;
-    height: 100px;
-    background-color: #11A;
-}
+} */
